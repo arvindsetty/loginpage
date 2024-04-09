@@ -1,0 +1,478 @@
+.login-body{
+    display: flex;
+    background-color: #ffffff;
+}
+.left{
+    max-width:110vh;
+    height: 100vh;
+    background-image: linear-gradient(to right,#3a5bff36, #2696ff54,#2696ff42);;
+    border-radius:0 0px 160px 0 ;
+}
+.left h1{
+    font-family: Quicksand;
+    font-size: 30px;
+    font-weight: 700;
+    margin-left: 80px;
+    color: #1c1c1c;
+}
+#fieldaLogo{
+    margin-top: 40px;
+    margin-left: 220px;
+}
+#loginImage{
+    margin-top: 70px;
+    animation-name: moving;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+@keyframes moving {
+    0% { transform: translate(0px, 0px)  }
+      50% { transform: translate(0px, 12px) }
+      100% { transform: translate(0px, 0px) }
+  }
+.right{
+    width: 100vh;
+    height: 100vh;
+    background-image: linear-gradient(to right,#ffffff, #ffffff,#ffffff,#ffffff);
+}
+.login-form{
+    height: 65vh;
+    max-width: 100%;
+    margin-left: 120px;
+    margin-top: 140px;  
+}
+#loginText{
+    font-size: 36px;
+    font-family: 'quicksand';
+    text-align: left;
+    padding-top: 40px;
+    color: #12a484;
+}
+#subHeadline{
+    font-size: 16px;
+    font-family: 'quicksand';
+    text-align: left;
+    color: rgb(137, 135, 135);
+    padding-bottom: 20px;
+
+}
+.form-group {
+    position: relative;
+    padding: 20px 0 0 20px;
+    width: 100%;
+    max-width: 280px;
+    margin-left: -10px;
+  }
+  
+  .form-field {
+    font-family: 'firasans';
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid #000000;
+    outline: 0;
+    font-size: 18px;
+    font-family: 'firasans';
+    color: #2d2929c9;
+    letter-spacing: 0rem;
+    background: transparent;
+    transition: border-color 0.2s;
+  }
+  
+  .form-field::placeholder {
+    color: transparent;
+  }
+  
+  .form-field:placeholder-shown ~ .form-label {
+    font-size: 18px;
+    cursor: text;
+    top: 20px;
+  }
+  
+  .form-label {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 0px;
+    color: #000000;
+    pointer-events: none;
+  }
+  
+  .form-field:focus {
+    padding-bottom: 6px;
+    padding-top: 8px;
+    font-weight: 100;
+    border-width: 3px;
+    border-image: linear-gradient(to right, #343333, #1c1c1c);
+    border-image-slice: 1;
+  }
+  
+  .form-field:focus ~ .form-label {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 18px;
+    color: #151515;
+    font-weight: 700;
+  }
+  .error-message{
+    color: red;
+  }
+  .password-toggle{
+    position: absolute;
+    top: 20px;
+    left: 280px;
+    cursor: pointer;
+  }
+  #forgotPwd{
+    margin-left: 166px;
+    cursor: pointer;
+    color: #343333;
+  }
+  #forgotPwd:hover{
+    font-weight: 500;
+  }
+  .login-button {
+    font-family: 'fira sans';
+    text-transform: uppercase;
+    background-color: #f3f7fe;
+    color: #000000;
+    font-weight: 600;
+    outline: 2px solid green;
+    border-radius: 8px;
+    width: 180px;
+    height: 40px;
+    transition: .3s;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-left: 70px;
+  }
+  .login-button:hover {
+    background-color: #2697FF;
+    box-shadow: 0 0 0 5px #3b83f65f;
+    color: #fff;
+  }
+  #registerPara{
+    font-size: 20px;
+    text-align: left;
+    padding-top: 20px;
+    color: #343333;
+  }
+  #registerPara b{
+    cursor: pointer;
+    color: #12a484;
+    font-family: 'quicksand';
+    font-size: 24px;
+  }
+  #registerPara b:hover{
+    text-decoration: underline;
+    color: #3A5CFF;
+  }
+  @media (max-width: 410px) and (min-width: 210px) {
+    .left{
+      display: none;
+    }
+    .right{
+      background-image: url('../../assets/fielda-logo1.png');
+      background-repeat: no-repeat;
+      background-size: 220px;
+      background-position: 17% 5%;
+      
+    }
+    .login-form{
+      height: 65vh;
+      max-width: 100% ;
+      margin-left: 30px;
+      margin-top: 80px;    
+  }
+  #loginText{
+    padding-top: 40px;
+  }
+  #subHeadline{
+    font-size: 12px;
+    padding-bottom: 0px;
+  }
+  #forgotPwd{
+    margin-left: 166px;
+  }
+  .login-button{
+    margin-left: 70px;
+  }
+  }
+  @media (max-width: 410px) and (min-width: 380px){
+    .left{
+      display: none;
+    }
+    .right{
+      background-image: url('../../assets/fielda-logo1.png');
+      background-repeat: no-repeat;
+      background-size: 220px;
+      background-position: 18% 5%;
+      
+    }
+    .login-form{
+      height: 65vh;
+      max-width: 100% ;
+      margin-left: 30px;
+      margin-top: 80px;    
+  }
+  #loginText{
+    padding-top: 40px;
+  }
+  #subHeadline{
+    font-size: 12px;
+    padding-bottom: 0px;
+  }
+  #forgotPwd{
+    margin-left: 166px;
+  }
+  .login-button{
+    margin-left: 70px;
+  }
+  }
+  @media (max-width: 539px) and (min-width: 381px){
+    .left{
+      display: none;
+    }
+    .right{
+      background-image: url('../../assets/fielda-logo1.png');
+      background-repeat: no-repeat;
+      background-size: 220px;
+      background-position: 16% 5%;
+      
+    }
+    .login-form{
+      height: 65vh;
+      max-width: 100% ;
+      margin-left: 30px;
+      margin-top: 80px;    
+  }
+  #loginText{
+    padding-top: 40px;
+  }
+  #subHeadline{
+    font-size: 12px;
+    padding-bottom: 0px;
+  }
+  #forgotPwd{
+    margin-left: 166px;
+  }
+  .login-button{
+    margin-left: 70px;
+  }
+  }
+  /* @media (max-width: 539px) and (min-width: 481px){
+    .left{
+      width: 38vh;
+    }
+    .left h1{
+      font-size: larger;
+    }
+    #loginImage{
+      height: 420px;
+      width: 380px;
+    }
+    #fieldaLogo{
+      height: 160px;
+      width: 320px;
+    }
+    .login-form{
+      height: 65vh;
+      width: 50vh;
+      margin-left: 20px;
+      margin-top: 220px;    
+  }
+  #loginText{
+    padding-top: 40px;
+  }
+  #subHeadline{
+    font-size: 12px;
+    padding-bottom: 0px;
+  }
+  #forgotPwd{
+    margin-left: 166px;
+  }
+  .login-button{
+    margin-left: 70px;
+  }
+  } */
+  @media (max-width: 767px) and (min-width: 540px){
+    .left{
+      display: none;
+    }
+    .right{
+      background-image: url('../../assets/fielda-logo1.png');
+      background-repeat: no-repeat;
+      background-size: 220px;
+      background-position: 16% 5%;
+      
+    }
+    .login-form{
+      height: 65vh;
+      max-width: 100% ;
+      margin-left: 20px;
+      margin-top: 80px;    
+  }
+  #loginText{
+    padding-top: 40px;
+  }
+  #subHeadline{
+    font-size: 12px;
+    padding-bottom: 0px;
+  }
+  #forgotPwd{
+    margin-left: 166px;
+  }
+  .login-button{
+    margin-left: 70px;
+  }
+  }
+  @media (max-width: 911px) and (min-width: 768px){
+    .left{
+      width: 38vh;
+    }
+    .left h1{
+      font-size: larger;
+    }
+    #loginImage{
+      height: 420px;
+      width: 380px;
+    }
+    #fieldaLogo{
+      height: 160px;
+      width: 320px;
+      margin-left: 30px;
+    }
+    .login-form{
+      height: 65vh;
+      width: 50vh;
+      margin-left: 20px;
+      margin-top: 220px;    
+  }
+  #loginText{
+    padding-top: 40px;
+  }
+  #subHeadline{
+    font-size: 12px;
+    padding-bottom: 0px;
+  }
+  #forgotPwd{
+    margin-left: 166px;
+  }
+  .login-button{
+    margin-left: 70px;
+  }
+
+  }
+  @media (max-width: 1023px) and (min-width: 912px){
+    .left{
+      width: 45vh;
+    }
+    .left h1{
+      font-size: larger;
+    }
+    #loginImage{
+      height: 520px;
+      width: 480px;
+    }
+    #fieldaLogo{
+      height: 160px;
+      width: 320px;
+      margin-left: 80px;
+    }
+    .login-form{
+      height: 65vh;
+      width: 50vh;
+      margin-left: 40px;
+      margin-top: 220px;    
+  }
+  #loginText{
+    padding-top: 40px;
+  }
+  #subHeadline{
+    font-size: 12px;
+    padding-bottom: 0px;
+  }
+  #forgotPwd{
+    margin-left: 166px;
+  }
+  .login-button{
+    margin-left: 70px;
+  }
+
+  }
+  @media (max-width: 1200px) and (min-width: 1024px){
+    .left{
+      display: none;
+    }
+    .right{
+      background-image: url('../../assets/fielda-logo1.png');
+      background-repeat: no-repeat;
+      background-size: 220px;
+      background-position: 16% 5%;
+      
+    }
+    .login-form{
+      height: 65vh;
+      width: 100vh;
+      margin-left: 70px;
+      margin-top: 90px;    
+  }
+  #loginText{
+    padding-top: 40px;
+  }
+  #subHeadline{
+    font-size: 12px;
+    padding-bottom: 0px;
+  }
+  #forgotPwd{
+    margin-left: 166px;
+  }
+  .login-button{
+    margin-left: 70px;
+  }
+
+  }
+  @media (max-width: 1300px) and (min-width: 1201px){
+
+ .left{
+      width: 70vh;
+    }
+    .left h1{
+      font-size: 28px;
+      margin-top: -50px;
+    }
+    #loginImage{
+      height: 520px;
+      width: 480px;
+      margin-top: -80px;
+      margin-left: 40px;
+    }
+    #fieldaLogo{
+      height: 160px;
+      width: 320px;
+      margin-left: 120px;
+    }
+    .login-form{
+      height: 65vh;
+      width: 50vh;
+      margin-left: 80px;
+      margin-top: 150px;    
+  }
+  #loginText{
+    padding-top: 40px;
+  }
+  #subHeadline{
+    font-size: 12px;
+    padding-bottom: 0px;
+  }
+  #forgotPwd{
+    margin-left: 166px;
+  }
+  .login-button{
+    margin-left: 70px;
+  }
+  }
+  
